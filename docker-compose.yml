@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: Ganesha@31
+      MYSQL_DATABASE: AST
+    ports:
+      - "3308:3306"
+
+  backend:
+    build:
+      context: ./ApplicationAST
+    ports:
+      - "9090:9090"  # Change from 8080:8080 to 9090:9090
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/AST
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Ganesha@31
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./Frontend
+    ports:
+      - "3000:3000"

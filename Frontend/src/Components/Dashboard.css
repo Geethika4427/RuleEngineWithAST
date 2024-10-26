@@ -1,0 +1,37 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    padding: 20px; /* Add padding inside the container */
+    border: 2px solid #007bff; /* Change the color and thickness of the border as needed */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin: 20px; /* Add margin around the container */
+    background-color: #f9f9f9; /* Optional: Set a background color */
+  }
+
+  .dashboard-container h1{
+    font-size: 38px;
+  }
+  
+  .dashboard-buttons {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .dashboard-button {
+    padding: 10px 20px; /* Add padding to buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Round button corners */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  .dashboard-button:hover {
+    background-color: #0056b3; /* Change background on hover */
+  }
+  
