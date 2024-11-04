@@ -153,9 +153,13 @@ DELEte http://localhost:9090/api/rules/delete/{ruleId}
 
 Technology Stack
 -------------------
-Spring Boot: For its robustness, ease of use in building RESTful services, and compatibility with MySQL.
-MySQL: To store rules and user data with high reliability and performance.
-React: For dynamic frontend interfaces that offer a smooth user experience.
+**Spring Boot**: For its robustness, ease of use in building RESTful services, and compatibility with MySQL.
+**MySQL**: To store rules and user data with high reliability and performance.
+**React**: For dynamic frontend interfaces that offer a smooth user experience.
+**IDEs**:
+Frontend: Visual Studio Code for React development.
+Backend: Spring Tool Suite (STS) for Spring Boot.
+MySQL: Command Line Interface (CMD) for MySQL setup and management.
 
 # Abstract Syntax Tree (AST) Design
 
